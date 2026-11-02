@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>叮咚News Privacy Policy</title>
+<meta name="description" content="How 叮咚News accesses, uses, stores and deletes data, including data received from Google (YouTube API Services) and Meta.">
+<style>
+  :root { --bg: #fbfaf7; --fg: #1f2328; --muted: #59636e; --line: #e2ded6; --accent: #b4442f; --card: #ffffff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16181c; --fg: #e8e6e3; --muted: #a3a8b0; --line: #2e3238; --accent: #ef8a72; --card: #1d2026; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  .back { font-size: 0.95rem; }
+  h1 { margin: 12px 0 0; font-size: 1.9rem; letter-spacing: -0.01em; }
+  .meta { margin: 4px 0 0; color: var(--muted); }
+  h2 { margin: 36px 0 8px; font-size: 1.15rem; }
+  ul { padding-left: 1.2em; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); overflow-wrap: anywhere; }
+  code { font-size: 0.9em; overflow-wrap: anywhere; }
+  .note { padding: 14px 18px; background: var(--card); border: 1px solid var(--line); border-radius: 10px; }
+  .zh { margin-top: 48px; padding-top: 8px; border-top: 1px solid var(--line); }
+  footer { margin-top: 48px; color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="./">← 叮咚News</a>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective November 2, 2026 · <a href="#zh">中文版</a></p>
+
+  <p>This policy explains how 叮咚News ("the app") handles data. The app is a private tool that its owner, GreatCName, runs on their own Mac to publish their own videos to their own accounts. It is not offered to the public, has no server of its own, and does not collect data about anyone else.</p>
+
+  <h2>1. Data the app accesses</h2>
+  <p><strong>From Google (YouTube API Services).</strong> When the owner connects a YouTube channel, the app asks for these permissions:</p>
+  <ul>
+    <li><code>youtube.upload</code>: upload videos to the channel.</li>
+    <li><code>youtube</code>: manage the channel's videos, for example set a thumbnail, check processing and privacy status, or delete a video the owner asked the app to remove.</li>
+    <li><code>youtube.readonly</code>: read the channel's ID, name, handle and profile picture, so the owner can tell connected channels apart.</li>
+  </ul>
+  <p>The app also receives OAuth access and refresh tokens, and the ID, link and status of each video it uploads.</p>
+  <p><strong>From Meta.</strong> When the owner connects a Facebook Page or Instagram professional account, the app asks for permission to list the owner's Pages, publish posts and videos to them, and publish to the linked Instagram account. It receives the Page or account ID, name, picture and access tokens.</p>
+  <p><strong>Files the owner adds.</strong> Videos, thumbnails and the text the owner writes or approves, plus frames and a speech transcript the app makes from each video on the owner's computer.</p>
+
+  <h2>2. How the data is used</h2>
+  <p>Only to do what the owner asks: upload and schedule videos, set titles, descriptions, tags and thumbnails, check whether a video was published correctly, delete a video when the owner asks, and show the owner which accounts are connected. The data is not used for advertising, profiling, or any other purpose.</p>
+
+  <h2>3. Where the data is stored</h2>
+  <ul>
+    <li>Everything is stored in a local database on the owner's Mac. There is no cloud copy and no server operated by the app.</li>
+    <li>OAuth tokens are encrypted with AES-256-GCM before they are saved. The encryption key is kept in the macOS Keychain.</li>
+    <li>The app's interface only listens on the owner's own computer.</li>
+  </ul>
+
+  <h2>4. Sharing</h2>
+  <p>The data is never sold, rented or shared for advertising. It leaves the owner's computer only in these cases, each one needed for a feature the owner turned on:</p>
+  <ul>
+    <li><strong>Google / YouTube and Meta</strong> receive the videos and text the owner publishes, through their official APIs.</li>
+    <li><strong>The owner's own Telegram bot</strong> receives notifications, which can include a channel or Page name, a video title and the video's link.</li>
+    <li><strong>An AI service chosen by the owner</strong> (DeepSeek or Anthropic) receives frames and the speech transcript of the owner's own video, together with the owner's style notes, to draft titles and captions. No data received from Google APIs is sent to an AI service: no tokens, channel information or YouTube data.</li>
+  </ul>
+
+  <h2>5. Google API Services User Data Policy</h2>
+  <div class="note">
+    <p>叮咚News's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+  </div>
+  <ul>
+    <li>Google user data is used only to provide the features described above.</li>
+    <li>It is not transferred to others except as needed to provide those features, to comply with the law, or as part of a merger or acquisition.</li>
+    <li>It is not used for advertising, and no person other than the owner reads it.</li>
+    <li>It is not used to develop, improve or train generalized AI or machine learning models.</li>
+  </ul>
+  <p>The app uses YouTube API Services. By using it, the owner also agrees to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, and Google's handling of data is described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+  <h2>6. Keeping and deleting data</h2>
+  <ul>
+    <li>Data is kept until the owner disconnects the account in the app, or deletes the app's data folder on their computer. Disconnecting removes the stored tokens.</li>
+    <li>Google access can be revoked at any time on the <a href="https://myaccount.google.com/permissions">Google Account permissions page</a> (Google security settings).</li>
+    <li>Facebook and Instagram access can be removed in Facebook's settings, under "Business integrations".</li>
+  </ul>
+  <p id="data-deletion"><strong>Data deletion requests.</strong> Because all data stays on the owner's computer, deleting the account in the app or deleting its data folder removes it completely. You can also email <a href="mailto:vancooler99@gmail.com">vancooler99@gmail.com</a> to ask for deletion; requests are answered within 30 days.</p>
+
+  <h2>7. Children</h2>
+  <p>The app is not directed at children and does not knowingly collect data from children.</p>
+
+  <h2>8. Changes</h2>
+  <p>If this policy changes, the new version will be posted on this page with a new effective date.</p>
+
+  <h2>9. Contact</h2>
+  <p>GreatCName · <a href="mailto:vancooler99@gmail.com">vancooler99@gmail.com</a></p>
+
+  <section class="zh" id="zh" lang="zh-CN">
+    <h2>中文版（摘要）</h2>
+    <p>叮咚News 是所有者 GreatCName 在自己 Mac 上运行的个人发布工具，不对外提供服务，没有自己的服务器，不收集他人的数据。</p>
+    <ul>
+      <li><strong>访问的数据：</strong>连接 YouTube 时申请上传视频（<code>youtube.upload</code>）、管理视频（<code>youtube</code>，如设置缩略图、检查状态、按所有者要求删除视频）、读取频道信息（<code>youtube.readonly</code>，频道 ID、名称、头像）三项权限；连接 Facebook 主页和 Instagram 时申请列出主页、发布内容的权限。另外还有所有者添加的视频、缩略图和文案。</li>
+      <li><strong>用途：</strong>只用于完成所有者要求的发布、定时、检查和删除，不用于广告或其他目的。</li>
+      <li><strong>存储：</strong>全部保存在所有者 Mac 上的本地数据库里；授权令牌用 AES-256-GCM 加密，密钥存放在 macOS 钥匙串中。</li>
+      <li><strong>共享：</strong>不出售、不出租、不用于广告。只在以下情况离开电脑：通过官方接口发给 Google/YouTube 和 Meta；通知发到所有者自己的 Telegram 机器人；起草文案时，把所有者自己视频的截图和语音转写发给所有者选择的 AI 服务（DeepSeek 或 Anthropic）。从 Google 接口取得的任何数据都不会发给 AI 服务。</li>
+      <li><strong>Google 数据：</strong>遵守 Google API 服务用户数据政策（含"有限使用"要求），不用于训练通用 AI 或机器学习模型。本工具使用 YouTube API 服务，使用即表示同意 YouTube 服务条款；Google 的数据处理见 Google 隐私权政策。</li>
+      <li><strong>删除：</strong>在工具里断开账号即删除令牌，删除数据文件夹即删除全部数据；可随时在 <a href="https://myaccount.google.com/permissions">Google 账号权限页面</a>撤销授权，或在 Facebook 设置的"商业整合"中移除；也可发邮件到 <a href="mailto:vancooler99@gmail.com">vancooler99@gmail.com</a> 申请删除，30 天内处理。</li>
+    </ul>
+  </section>
+
+  <footer>© 2026 GreatCName · <a href="terms.html">Terms of Service</a></footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>叮咚News</title>
+<meta name="description" content="叮咚News is a private, self-hosted tool its owner runs on their own Mac to publish their own short videos to their own YouTube channel and social media accounts.">
+<style>
+  :root { --bg: #fbfaf7; --fg: #1f2328; --muted: #59636e; --line: #e2ded6; --accent: #b4442f; --card: #ffffff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16181c; --fg: #e8e6e3; --muted: #a3a8b0; --line: #2e3238; --accent: #ef8a72; --card: #1d2026; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  header p { margin: 4px 0 0; color: var(--muted); }
+  h1 { margin: 0; font-size: 2rem; letter-spacing: -0.01em; }
+  h2 { margin: 40px 0 8px; font-size: 1.15rem; }
+  ul { padding-left: 1.2em; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); }
+  nav { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 28px 0 0; padding: 14px 18px; background: var(--card); border: 1px solid var(--line); border-radius: 10px; }
+  .zh { margin-top: 48px; padding-top: 8px; border-top: 1px solid var(--line); }
+  footer { margin-top: 48px; color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>叮咚News</h1>
+    <p>A personal video publishing tool</p>
+  </header>
+
+  <p>叮咚News is a private, self-hosted tool that its owner runs on their own Mac. It publishes short videos the owner made to the owner's own YouTube channel and other social media accounts. It is not offered to the public: there is no sign-up, no hosted service, and no advertising.</p>
+
+  <nav aria-label="Policies">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="mailto:vancooler99@gmail.com">Contact: vancooler99@gmail.com</a>
+  </nav>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Uploads the owner's videos to the owner's YouTube channel, right away or at a scheduled time, with a title, description, tags and thumbnail.</li>
+    <li>Publishes to the owner's Facebook Page and Instagram professional account, when the owner connects them.</li>
+    <li>Checks whether each upload was processed and whether it is public, and notifies the owner through the owner's own Telegram bot.</li>
+    <li>Drafts titles, descriptions and tags from the video's frames and speech, using an AI service the owner chooses.</li>
+  </ul>
+
+  <h2>How it uses your Google account</h2>
+  <p>The owner signs in with Google to let the tool upload and manage videos on the owner's YouTube channel and read the channel's name and picture. The tool uses YouTube API Services. Everything it receives is stored only on the owner's computer, and access can be revoked at any time on the <a href="https://myaccount.google.com/permissions">Google Account permissions page</a>. Details are in the <a href="privacy.html">Privacy Policy</a>.</p>
+
+  <section class="zh" lang="zh-CN">
+    <h2>中文简介</h2>
+    <p>叮咚News 是一个个人自用的视频发布工具，只运行在所有者自己的 Mac 上，用来把所有者制作的短视频发布到所有者自己的 YouTube 频道和其他社交媒体账号。它不对外提供服务：没有注册、没有服务器、没有广告。</p>
+    <ul>
+      <li>上传视频到所有者的 YouTube 频道，可立即发布或定时发布，并设置标题、描述、标签和缩略图。</li>
+      <li>连接后，发布到所有者的 Facebook 主页和 Instagram 专业账号。</li>
+      <li>检查视频是否处理完成、是否公开，并通过所有者自己的 Telegram 机器人通知。</li>
+      <li>用所有者选择的 AI 服务，根据视频画面和语音起草标题、描述和标签。</li>
+    </ul>
+    <p>使用 Google 账号登录是为了获得上传、管理频道视频和读取频道名称的权限；取得的数据只保存在所有者的电脑上，可随时在 <a href="https://myaccount.google.com/permissions">Google 账号权限页面</a>撤销。详见<a href="privacy.html">隐私政策</a>和<a href="terms.html">服务条款</a>。</p>
+  </section>
+
+  <footer>© 2026 GreatCName · <a href="mailto:vancooler99@gmail.com">vancooler99@gmail.com</a></footer>
+</main>
+</body>
+</html>
